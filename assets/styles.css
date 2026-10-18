@@ -3,8 +3,8 @@
    Without JS (or with reduced motion) every section is a normal, readable block. */
 
 :root {
-  --o1: #f2690f;
-  --o2: #e3171a;
+  --o1: #557568;
+  --o2: #2f4a52;
   --ink: #070707;
   --card: #141414;
   --line: rgba(255, 255, 255, .13);
@@ -75,9 +75,9 @@ ol, ul { list-style: none; }
 .hero-card {
   position: absolute; inset: 0; overflow: hidden;
   background:
-    radial-gradient(60% 50% at 0% 85%, rgba(255, 140, 30, .55), transparent 70%),
-    radial-gradient(80% 70% at 100% 0%, rgba(255, 120, 20, .5), transparent 65%),
-    linear-gradient(160deg, #e8560f 0%, #c3170f 48%, #6a0a06 100%);
+    radial-gradient(60% 50% at 0% 85%, rgba(140, 175, 160, .35), transparent 70%),
+    radial-gradient(80% 70% at 100% 0%, rgba(110, 150, 140, .35), transparent 65%),
+    linear-gradient(160deg, #5f7f73 0%, #34525a 48%, #16252a 100%);
   transform-origin: 50% 50%;
 }
 .hero-photo {
@@ -89,7 +89,7 @@ ol, ul { list-style: none; }
 }
 .hero-card::after { /* re-tint the photo red and darken the floor */
   content: ""; position: absolute; inset: 0; pointer-events: none;
-  background: linear-gradient(180deg, rgba(230, 30, 20, .18), rgba(40, 4, 2, .45));
+  background: linear-gradient(180deg, rgba(60, 95, 100, .18), rgba(10, 20, 24, .45));
   mix-blend-mode: multiply;
 }
 .hero-text { position: absolute; inset: 0; z-index: 2; padding: 0 var(--pad); }
@@ -195,7 +195,7 @@ ol, ul { list-style: none; }
 .views { bottom: 34px; font-size: 1.5rem; letter-spacing: -.02em; }
 .owned { bottom: 72px; font-size: .88rem; font-weight: 500; color: rgba(255, 255, 255, .8); }
 .reel.on { border-color: var(--o1); box-shadow: 0 0 0 1px var(--o1); }
-.reel.on .views { color: #ffb27a; }
+.reel.on .views { color: #b9d3c4; }
 
 /* ---------- Frame by Frame ---------- */
 .frames { padding: 14vh var(--pad); }
@@ -247,7 +247,7 @@ ol, ul { list-style: none; }
 }
 .script[hidden] { display: none; }
 .script-no { display: block; color: var(--muted); font-size: .9rem; font-weight: 500; }
-.script h3 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; letter-spacing: -.02em; color: #ff7a2a; margin: 6px 0 4px; }
+.script h3 { font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400; letter-spacing: -.02em; color: #a8c7b8; margin: 6px 0 4px; }
 .script-type { color: #fff; font-weight: 500; }
 .script-cta { margin: 32px auto 30px; max-width: 34ch; font-size: clamp(1.15rem, 1.8vw, 1.45rem); line-height: 1.4; color: rgba(255, 255, 255, .85); }
 .script details { border-top: 1px solid var(--line); text-align: left; }
@@ -262,7 +262,7 @@ ol, ul { list-style: none; }
 .script details[open] summary i::after { transform: translate(-50%, -50%) rotate(0deg); }
 .screenplay { padding: 18px 0 8px; display: grid; gap: 12px; font-size: .98rem; }
 .screenplay .act { color: var(--muted); font-style: italic; }
-.screenplay .vo b { display: block; font-weight: 600; color: #ff9a5a; font-size: .85rem; }
+.screenplay .vo b { display: block; font-weight: 600; color: #a8c7b8; font-size: .85rem; }
 .screenplay .vo b i { font-weight: 400; color: var(--muted); }
 .screenplay .cta { color: #fff; }
 
@@ -271,9 +271,9 @@ ol, ul { list-style: none; }
 .glow {
   position: absolute; inset: 25% -15% -30%; pointer-events: none;
   background:
-    radial-gradient(45% 55% at 20% 85%, rgba(242, 105, 15, .95), transparent 70%),
-    radial-gradient(40% 50% at 75% 75%, rgba(227, 23, 26, .8), transparent 70%),
-    radial-gradient(60% 40% at 50% 100%, rgba(242, 105, 15, .9), transparent 75%);
+    radial-gradient(45% 55% at 20% 85%, rgba(85, 117, 104, .9), transparent 70%),
+    radial-gradient(40% 50% at 75% 75%, rgba(47, 74, 82, .8), transparent 70%),
+    radial-gradient(60% 40% at 50% 100%, rgba(85, 117, 104, .85), transparent 75%);
   filter: blur(40px); opacity: 1;
 }
 .foot-card {
@@ -332,7 +332,7 @@ ol, ul { list-style: none; }
 .cloud-on .cloud-stage { position: sticky; top: 0; height: 100vh; display: grid; place-items: center; overflow: hidden; }
 .cloud-on .names { position: absolute; inset: 8vh var(--pad); margin: 0; display: block; color: #fff; font-size: clamp(1.2rem, 2.3vw, 2.3rem); }
 .cloud-on .names li { position: absolute; left: var(--x); top: var(--y); translate: calc(var(--x) * -1) 0; white-space: nowrap; letter-spacing: -.02em; }
-.cloud-on .names li:nth-child(3n+1) { color: #ff8a3a; }
+.cloud-on .names li:nth-child(3n+1) { color: #b9d3c4; }
 
 /* ---------- Smaller screens ---------- */
 @media (max-width: 1000px) {
